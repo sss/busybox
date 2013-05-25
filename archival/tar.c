@@ -679,7 +679,7 @@ static llist_t *append_file_list_to_list(llist_t *list)
 			char *cp = last_char_is(line, '/');
 			if (cp > line)
 				*cp = '\0';
-			llist_add_to(&newlist, line);
+			llist_add_to_end(&newlist, line);
 		}
 		fclose(src_stream);
 	}
